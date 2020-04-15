@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
 *
 {
     margin: 0;
@@ -10,75 +10,20 @@ body
 {
   min-height: 1000px;
 }
-header
-{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 100px;
-    z-index: 1000;
-    transition: 0.6s;
-}
-header.sticky
-{
-    padding: 5px 100px;
-    background: #fff;
-    border-bottom: 1px solid (0,0,0,.1);
-}
-header .logo
-{
-    position: relative;
-    font-weight: 700;
-    color: #fff;
-    text-decoration: none;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: 0.6s;
-}
-header ul
-{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-header ul li 
-{
-    position: relative;
-    list-style: none;
-}
-header ul li  a
-{
-    position: relative;
-    margin: 0 15px;
-    text-decoration: none;
-    color: #fff;
-    letter-spacing: 2px;
-    font-weight: 300;
-    transition: 0.6s;
-}
-.banner
+
+.banners
 {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background: url(bg.jpg);
+    background: url(bg1.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-header.sticky .logo,
-header.sticky ul li a
-{
-    color: #000;
-}
-.banner h2
+
+.banners h2
 {
     color: #fff;
     font-size: 90px;
@@ -86,14 +31,11 @@ header.sticky ul li a
     text-align: left;
     line-height: 1em;
 }
-.banner h2 span
+.banners h2 span
 {
     color: #4978ff;
 }
-.toggle
-{
-    display: none;
-}
+
 /*----------------------------------------------------------*/
 .sec
 {
@@ -129,158 +71,17 @@ p
     margin-bottom: 20px;
     letter-spacing: 1px;
 }
-.container
-{
-    position: relative;
-    padding: 25px;
-    width: 600px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 20px;
-}
-.container .card
-{
-    position: relative;
-    height: 200px;
-    background: #fff;
-    display: flex;
-    width: 50%;
-    margin: 30px 0;
-}
-.container .card .imgBx
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #4cb69f;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    transition: 0.5s ease-in-out;
-}
-.container .card:hover .imgBx
-{
-    width: 150px;
-    height: 150px;
-    left: -75px;
-    top: calc(50% - 75px);
-    transition: 0.5s ease-in-out;
-    background: #ff0057;
-}
-.container .card .imgBx::before
-{
-    content: attr(dat-text);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    font-size: 1em;
-    color: rgba(255, 255, 255, .05);
-    font-weight: 700;
-}
-.container .card .imgBx h3
-{
-    font-size: 30px;
-    transition: 0.5s ease-in-out;
-}
-.container .card:hover .imgBx h3
-{
-    font-size: 20px;
-}
-.container .card .content
-{
-    position:absolute;
-    right: 0;
-    width: calc(100% -75px);
-    height: 100%;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.container .card .content h3
-{
-    margin-bottom: 5px;
-    font-size: 24px;
-}
-.container .card .content a
-{
-    display: inline-block;
-    margin-top: 10px;
-    padding: 5px 10px;
-    background: #333;
-    text-decoration: none;
-    color: #fff;
-}
-@media (max-width: 992px)
-{
-    .container
-    {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-    }
-    .container .card
-    {
-        width: 400px;
-    }
-}
-@media (max-width: 768px)
-{
-    .container .card
-    {
-       max-width: 300px;
-       flex-direction: column;
-       height: auto;
-    }
-    .container .card .imgBx
-    {
-       position: relative;
-    }
-    .container .card .imgBx,
-    .container .card:hover .imgBx
-    {
-       width: 100%;
-       height: 200px;
-       left: 0;
-    }
-    .container .card .imgBx h3,
-    .container .card:hover .imgBx h3
-    {
-       max-width: 100px;
-    }
-    .container .card .content
-    {
-        position: relative;
-        width: 100%;
-    }
-}
+
 .sec2
 {
-    background: #8bf0ba;
+    background:  #8bf0ba;
     padding: 50px;
     min-height: 50vh;
     display: flex;
     justify-content: center;
     align-items: Center;
 }
-.sec2 .container
-{
-    position: relative;
-    text-align: center;
-    width: 100%;
-}
-.card
-{
-    max-width: 450px;
-    margin: 0 auto;
-}
+
 .sec3
 {
     background: #fff1b5;
@@ -290,103 +91,10 @@ p
     justify-content: center;
     align-items: Center;
 }
-.sec3 .details
-{
-    position: relative;
-    text-align: center;
-    width: 100%;
-}
-.social
-{
-    max-width: 450px;
-    margin: 0 auto;
-    
-}
-.social .p
-{
-    margin-bottom: 5px;
-    font-size: 15px;
-}
-.icon
-{
-    padding: 10px;
-    font-size: 48px;
-}
-.icon a
-{
-    padding:10px;
-    color: #000;
-}
 
 @media (max-width: 992px)
 {
-    .toggle
-    {
-        display: block;
-        position: relative;
-        width: 30px;
-        height: 30px;
-        cursor: pointer;
-    }
-    .toggle:before
-    {
-        content: '';
-        position: absolute;
-        top: 4px;
-        width: 100%;
-        height: 2px;
-        background: #000;
-        z-index: 1;
-        box-shadow: 0 10px 0 #000;
-        transition: 0.5s;
-    }
-    .toggle:after
-    {
-        content: '';
-        position: absolute;
-        bottom: 4px;
-        width: 100%;
-        height: 2px;
-        background: #000;
-        z-index: 1;
-        transition: 0.5s;
-    }
-header,
-header.sticky
-{
-    padding: 5px 50px;
-    background: #fff;
-}
-header ul
-{
-    position: absolute;
-    top: 50px;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    text-align: center;
-    overflow: auto;
-    background: #fff;
-    opacity: 0;
-}
-header.active ul
-{
-    visibility: visible;
-    opacity: 1;
-    display: block;
-    padding-top: 20px;
-}
-header.active ul li a
-{
-    display: inline-block;
-    margin: 10px 0;
-    font-size: 20px;
-}
-header .logo,
-header ul li a
-{
-    color: #000;
-}
+    
 .banner
 {
     background-position: center;
@@ -396,15 +104,7 @@ header ul li a
     font-size: 60px;
     padding: 0 50px;
 }
-.sec3
-{
-    padding: 100px 50px 50px 50px;
-}
-.social .p
-{
-    text-align: left;
-}
-}
+
 
 .list1 h3
 {
@@ -481,4 +181,5 @@ header ul li a
     font-size: 15px;
     font-weight: 300;
     padding-bottom: 20px;
+}
 }
