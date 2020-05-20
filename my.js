@@ -6,14 +6,17 @@ app.use(express.static(__dirname + '/public'));
 app.get("/", function(req,res){
     res.render("home");
 });
-app.get("/skills", function(req,res){
+app.get("/about", function(req,res){
+    res.render("education");
+});
+app.get("/skill", function(req,res){
     res.render("skills");
 });
-app.get("/projects", function(req,res){
+app.get("/project", function(req,res){
     res.render("projects");
 });
-app.get("/education", function(req,res){
-    res.render("education");
+app.get("/contact", function(req,res){
+    res.render("contact");
 });
 app.listen(port, function() {
     console.log('Our app is running on http://localhost:' + port);

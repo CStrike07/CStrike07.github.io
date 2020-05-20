@@ -1,185 +1,113 @@
-
 *
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 body
 {
-  min-height: 1000px;
+  background: #01082b;
+  color: #42768C;
+}
+#mainnav {
+  background-color: #01082b;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  animation: left-in 0.5s ease-in forwards;
+    animation-delay: 0.5s;
+}
+#mainnav .navbar-brand {
+  font-size: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: aqua;
+  font-weight: 200;
+}
+#mainnav .nav-link {
+  color: white;
+}
+#mainnav .nav-link:hover {
+  color: #42768C;
+}
+.home
+{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: auto;
+}
+.img-fluid
+{
+  padding-top: 80px;
+  animation: left-in 0.5s ease-in forwards;
+    animation-delay: 0.9s;
+}
+.text-center
+{
+  padding-top: 100px;
+  font-family: 'Indie Flower', cursive;
+}
+#webdev {
+  animation: left-in 0.5s ease-in forwards;
+    animation-delay: 0.7s;
+}
+#cp {
+  animation: left-in 0.5s ease-in forwards;
+    animation-delay: 1.0s;
+}
+#cp span {
+  color: whitesmoke;
+  font-size: 50px;
+  padding-top: 10px;
+  font-family: 'Indie Flower', cursive;
 }
 
-.banners
-{
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    background: url(bg1.jpg);
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#cptext span {
+ opacity: 0.5;
+ font-size: 35px;
+ font-family: 'Montserrat', sans-serif;
+ transform: translate(50%,-50%);
+ text-transform: uppercase;
+ text-shadow: 1px 1px 1px aqua,
+        1px 2px 1px aqua,
+        1px 3px 1px aqua,
+        1px 4px 1px aqua,
+        1px 5px 1px aqua,
+        1px 6px 1px aqua,
+        1px 7px 1px aqua,
+        1px 8px 1px aqua,
+        1px 9px 1px aqua,
+        1px 10px 1px aqua,
+    1px 18px 6px #101010c2,
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
 }
 
-.banners h2
+@keyframes fade-in
 {
-    color: #fff;
-    font-size: 90px;
-    text-transform: uppercase;
-    text-align: left;
-    line-height: 1em;
-}
-.banners h2 span
-{
-    color: #4978ff;
-}
-
-/*----------------------------------------------------------*/
-.sec
-{
-    background: #fff;
-    padding: 50px;
-    min-height: 40vh;
-    display: flex;
-    justify-content: center;
-    align-items: Center;
-}
-.sec .content
-{
-    position: relative;
-    text-align: center;
-    width: 100%;
-}
-.self
-{
-    max-width: 800px;
-    margin: 0 auto;
-}
-h3
-{
-    font-size: 40px;
-    font-weight: 200;
-    margin-bottom: 10px;
-}
-p
-{
-    position: relative;
-    font-size: 18px;
-    font-weight:300;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
 }
 
-.sec2
+@keyframes left-in
 {
-    background:  #8bf0ba;
-    padding: 50px;
-    min-height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: Center;
-}
-
-.sec3
-{
-    background: #fff1b5;
-    padding: 50px;
-    min-height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: Center;
-}
-
-@media (max-width: 992px)
-{
-    
-.banner
-{
-    background-position: center;
-}
-.banner h2
-{
-    font-size: 60px;
-    padding: 0 50px;
-}
-
-
-.list1 h3
-{
-    text-align: center;
-    font-size: 50px;
-    padding: 50px;
-}
-
-.list1 ul
-{
-   text-align: left;
-   font-size: 15px;
-   padding-left: 100px;
-}
-.list1 ul li
-{
-    font-size: 15px;
-    font-weight: 300;
-    padding-bottom: 20px;
-}
-.domain h3
-{
-    text-align: left;
-    font-size: 50px;
-    padding: 50px;
-}
-
-.list2 ul
-{
-   text-align: left;
-   font-size: 15px;
-   padding-left: 100px;
-}
-.list2 ul li
-{
-    font-size: 15px;
-    font-weight: 300;
-    padding-bottom: 20px;
-}
-.branch h3
-{
-    text-align: left;
-    font-size: 50px;
-    padding: 50px;
-}
-
-.list3 ul
-{
-   text-align: left;
-   font-size: 15px;
-   padding-left: 100px;
-}
-.list3 ul li
-{
-    font-size: 15px;
-    font-weight: 300;
-    padding-bottom: 20px;
-}
-.branch1 h3
-{
-    text-align: left;
-    font-size: 50px;
-    padding: 50px;
-}
-
-.list4 ul
-{
-   text-align: left;
-   font-size: 15px;
-   padding-left: 100px;
-}
-.list4 ul li
-{
-    font-size: 15px;
-    font-weight: 300;
-    padding-bottom: 20px;
-}
+    0%
+    {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateX(0px);
+        opacity: 1;
+    }
 }

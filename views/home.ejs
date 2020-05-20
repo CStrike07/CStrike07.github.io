@@ -3,127 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"></link>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Merriweather&family=Montserrat&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Chirag Sinha</title>
 </head>
 <body>
-    <nav class="navbar fixed-top navbar-light bg-light bg-dark ">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light bg-dark">
-        <a class="navbar-brand" href="#home"><h3>CS07</h3></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      </nav>
-    <section class="banners" id="home">
-        <h2>Hello World <br><span>I'm Chirag Sinha</span></h2>
-    </section>
-    <section class="sec" id="about">
-        <div class="content">
-            <div class="self">
-                <h3>About Myself</h3>
-    <p>My self Chirag Sinha. I am an Engineering student, currently studying at Ramaiah Institute Of Technology, Bangalore.
-     I have a great love for Programming. 
-   <br>Following are in depth required details which you would like to know about me.
-                 </p>
-            </div>
-        </div>
-    </section>
-    <section class="sec2" id="info">
-        <div class="row">
-            <div class="col-lg-4 col-sm-6" style="padding-bottom: 20px;">
-        <div class="card" style="width: 18rem;">
-            <div class="card-header" style="padding-bottom: 100px; background-color: #4cb69f;">
-            <h2 style="text-align: center;">Education</h2></div>
-            <div class="card-body">
-              <h5 class="card-title">Education</h5>
-              <p class="card-text"><ul><li>Ramaiah Institute Of Technology</li>
-            <li>Loyola High School</li></ul>
-              </p>
-              <a href="/education" class="btn btn-primary">Know More</a>
-            </div>
+<!--Nav Bar-->
+  <nav id="mainnav" class="navbar navbar-dark navbar-expand-md fixed-top">
+    <a href="/" class="navbar-brand">CS07</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navLinks">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="/" class="nav-link" style="color: #42768C;">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a href="/about" class="nav-link">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a href="/skill" class="nav-link">SKILLS</a>
+        </li>
+        <li class="nav-item">
+          <a href="/project" class="nav-link">PROJECTS</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+    <section class="container-fluid px-0">
+        <div class="row align-items-center">
+          <div id="cp" class="col-lg-4 col-md-12" onclick="location.href='/skill';">
+              <h3 id="cptext"  class="text-center">
+            #include <span>&ltiostream&gt</span><br>
+              using namespace std;<br>
+              int main(){<br>
+                cout&lt&lt<span>Hello World Chirag Sinha Hear !!</span>&lt&ltendl;<br>
+              }<br>
+              return 0; <br>
+            }
+          </h3>
           </div>
-        </div>
-        <div class="col-lg-4 col-sm-6" style="padding-bottom: 20px;">
-          <div class="card" style="width: 18rem;">
-            <div class="card-header" style="padding-bottom: 100px; background-color: #4cb69f;">
-                <h2 style="text-align: center;">CP</h2></div>
-            <div class="card-body">
-              <h5 class="card-title">Compititive Programming</h5>
-              <p class="card-text"><ul><li>CodeChef</li>
-            <li>Hackerrank</li></ul>
-              </p>
-              <a href="#home" class="btn btn-primary">Know More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6" style="padding-bottom: 20px;">
-          <div class="card" style="width: 18rem;">
-            <div class="card-header" style="padding-bottom: 100px; background-color: #4cb69f;">
-                <h2 style="text-align: center;">Achievements</h2></div>
-            <div class="card-body">
-              <h5 class="card-title">Achievements</h5>
-              <p class="card-text">Soon i will fill this coloumn.</p>
-              <a href="#home" class="btn btn-primary">Know More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6" style="padding-bottom: 20px;">
-          <div class="card" style="width: 18rem;">
-            <div class="card-header" style="padding-bottom: 100px; background-color: #4cb69f;">
-                <h2 style="text-align: center;">Projects</h2></div>
-            <div class="card-body">
-              <h5 class="card-title">Projects</h5>
-              <p class="card-text"><ul><li>Personal Website</li></ul>
-              </p>
-              <a href="/projects" class="btn btn-primary">Know More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <div class="card" style="width: 18rem;">
-            <div class="card-header" style="padding-bottom: 100px; background-color: #4cb69f;">
-                <h2 style="text-align: center;">Skills</h2></div>
-            <div class="card-body">
-              <h5 class="card-title">Skills</h5>
-              <p class="card-text"><ul><li>Web Development</li>
-            <li>Compititive Programming</li></ul></p>
-              <a href="/skills" class="btn btn-primary">Know More</a>
-            </div>
-          </div>
+          <div class="col-lg-4 col-md-12">
+            <img class="img-fluid" src="coder.jpg" alt="">
+          </div> 
+          <div id="webdev" class="col-lg-4 col-md-12" onclick="location.href='/project';">
+            <h3 id="cptext"  class="text-center">
+              &lthtml&gt<br>
+                &ltbody&gt<br>
+                &ltp&gt <span>&ltspan&gtI am trying something in web development &lt/span&gt</span> &lt/p&gt
+               <br>
+               &lt/body&gt <br>
+               &lt/html&gt
+            </h3>
           </div>
         </div>
     </section>
-    <section class="sec3" id="contact">
-            <div class="details">
-                <div class="social">
-                    <p>Email ID: chirag.suman2025@gmail.com</p>
-                    <div class="icon">
-<a href="https://github.com/CStrike07"><i class="fa fa-github-square" style="font-size:48px;color:#000"></i></a>
-<a href="https://www.linkedin.com/in/chirag-sinha-13a73011a/"><i class="fa fa-linkedin-square" style="font-size:48px;color:#000"></i></a>
-<a href="https://www.instagram.com/__c_hirag/"><i class="fa fa-instagram" style="font-size:48px;color:#000"></i></a>
-                    </div>
-                </div>
-            </div>
-    </section>
-    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 </html>
